@@ -18,15 +18,6 @@ num=input('Input how many links you would like to check: ')
 print("---------------------------------------------------------------")
 
 f=open("links.txt","w", encoding='utf-8')
-      
-for n in range(int(num)):
-   y = ''.join(random.choice(string.ascii_uppercase + string.digits + string.ascii_lowercase) for _ in range(16))
-   f.write('https://discord.gift/')
-   f.write(y)
-   f.write("\n")
-
-f.close()
-
 
 with open("links.txt") as f:
     for line in f:
